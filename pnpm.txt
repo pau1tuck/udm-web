@@ -16,3 +16,11 @@ We suggest that you begin by typing:
 
   cd udm-web
   pnpm run dev
+
+- Fill in package.json
+- Configure tsconfig.json
+- Install -d Prettier
+- Configure Prettier formatting
+- Configure eslint formatting
+- Add vscode settings.json
+- Add Apollo Client
