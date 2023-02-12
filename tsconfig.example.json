@@ -2,7 +2,7 @@
     "compilerOptions": {
         /* Basic options */
         "target": "es5", /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
-        "module": "commonjs", /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
+        "module": "ESNext", /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
         "lib": [ /* Specify library files to be included in the compilation. */
             "dom",
             "dom.iterable",
@@ -12,6 +12,7 @@
         "checkJs": true, /* Report errors in .js files. */
         "skipLibCheck": true, /* Skip type checking all .d.ts files. */
         "jsx": "preserve", /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
+        "incremental": true, /* Save .tsbuildinfo files to allow for incremental compilation of projects. */
         "declaration": true, /* Generates corresponding '.d.ts' file. */
         "declarationMap": true, /* Generates a sourcemap for each corresponding '.d.ts' file. */
         "sourceMap": true, /* Generates corresponding '.map' file. */
@@ -42,6 +43,7 @@
         "noFallthroughCasesInSwitch": true, /* Report errors for fallthrough cases in switch statement. */
         /* Module resolution options */
         "moduleResolution": "node", /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
+        "resolveJsonModule": true, /* Enable importing .json files. */
         "baseUrl": "./", /* Base directory to resolve non-absolute module names. */
         "paths": {}, /* A map of relative paths to absolute paths. */
         "rootDirs": [], /* List of root folders whose combined content represents the structure of the project at runtime. */
@@ -59,6 +61,10 @@
         "experimentalDecorators": true, /* Enables experimental support for ES7 decorators. */
         "emitDecoratorMetadata": true /* Enables experimental support for emitting type metadata for decorators. */
     },
+    "include": [
+        "**/*.ts",
+        "**/*.tsx"
+    ],
     "exclude": [
         "node_modules",
         "tmp",
