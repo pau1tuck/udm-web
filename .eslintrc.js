@@ -15,6 +15,8 @@ module.exports = {
   extends: [
     "airbnb-typescript-prettier",
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jest/recommended",
     "next/core-web-vitals",
     //"plugin:@typescript-eslint/recommended", // Uses the recommended rules from the @typescript-eslint/eslint-plugin
     "prettier/@typescript-eslint", // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
@@ -26,7 +28,7 @@ module.exports = {
     "max-classes-per-file": [1],
     "prefer-const": [error],
     // "class-methods-use-this": [0],
-    "@typescript-eslint/no-unused-vars": [0],
-    "@typescript-eslint/no-explicit-any": [0],
+    "@typescript-eslint/no-unused-vars": [error],
+    "@typescript-eslint/no-explicit-any": [error],
   },
 };
